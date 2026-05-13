@@ -1,21 +1,28 @@
 import java.util.Scanner;
 
+import static java.lang.System.*;
+
 public class Profile_Card {
     public static void main(String[] args){
-
-        System.out.println("==========================");
-        System.out.println("      Profile Card        ");
-        System.out.println("==========================");
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Name        : ");
+        Scanner sc=new Scanner(in);
+        out.println("Name        : ");
         String name=sc.nextLine();
-        System.out.print("Role        : ");
+        out.println("Role        : ");
         String role=sc.nextLine();
-        System.out.print("Location    : ");
+        out.println("Location    : ");
         String location=sc.nextLine();
-        System.out.print("Experience  : ");
+        out.println("Experience  : ");
         double experience=sc.nextDouble();
-        System.out.println("===========================");
+
+
+        out.println("==========================");
+        out.println("      Profile Card        ");
+        out.println("==========================");
+        out.println("Name        : "+name);
+        out.println("Role        : "+role);
+        out.println("Location    : "+location);
+        out.println("Experience  : "+experience);
+        out.println("===========================");
 
     }
 }
