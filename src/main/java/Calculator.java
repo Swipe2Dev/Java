@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Calculator {
-//
-//    static int add(int a,int b){return a+b;}
-//    static int sub(int a,int b){return a-b;}
-//    static int mul(int a,int b){return a*b;}
-//    static int div(int a,int b){return a/b;}
-//    static int mod(int a,int b){return a%b;}
+
+    static int add(int a,int b){return a+b;}
+    static int sub(int a,int b){return a-b;}
+    static int mul(int a,int b){return a*b;}
+    static int div(int a,int b){return a/b;}
+    static int mod(int a,int b){return a%b;}
 
 
     public static void main(String[] args){
