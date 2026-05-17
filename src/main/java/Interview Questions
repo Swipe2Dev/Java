@@ -1,0 +1,97 @@
+## Interview Question 1: What is JVM?
+
+The **Java Virtual Machine (JVM)** is an engine that runs Java programs.
+
+When you compile a Java program, the Java compiler converts the `.java` file into **bytecode** (`.class` file). The JVM reads this bytecode and executes it on the operating system.
+
+### Main Responsibilities of JVM
+
+* Loads Java classes into memory
+* Verifies bytecode
+* Executes bytecode
+* Manages memory automatically using **Garbage Collection**
+* Provides security and platform independence
+
+### Simple Flow
+
+```text
+Java Source Code (.java)
+        ↓
+Compiler (javac)
+        ↓
+Bytecode (.class)
+        ↓
+JVM
+        ↓
+Machine Code
+```
+
+### Key Point
+
+JVM is platform dependent internally (Windows JVM, Linux JVM, Mac JVM are different), but it makes Java programs platform independent.
+
+---
+
+## Interview Question 2: Difference between JDK, JRE, and JVM
+
+| Feature        | JVM                     | JRE                                       | JDK                                   |
+| -------------- | ----------------------- | ----------------------------------------- | ------------------------------------- |
+| Full Form      | Java Virtual Machine    | Java Runtime Environment                  | Java Development Kit                  |
+| Purpose        | Runs Java bytecode      | Provides environment to run Java programs | Used to develop and run Java programs |
+| Contains       | Executes `.class` files | JVM + Libraries                           | JRE + Development tools               |
+| Tools Included | No                      | No compiler                               | Includes `javac`, debugger, jar tools |
+| Used By        | End users/system        | End users                                 | Developers                            |
+
+### Relationship
+
+```text
+JDK = JRE + Development Tools
+JRE = JVM + Libraries
+```
+
+### Easy Analogy
+
+* JVM → Engine
+* JRE → Car ready to drive
+* JDK → Car factory with tools to build cars
+
+---
+
+## Interview Question 3: Why is Java platform independent?
+
+Java is platform independent because Java code is compiled into **bytecode**, not machine-specific code.
+
+The same bytecode can run on any operating system that has a compatible JVM.
+
+### Explanation
+
+```text
+Write Once, Run Anywhere (WORA)
+```
+
+### Example
+
+A Java program compiled on Windows can run on:
+
+* Linux
+* macOS
+* Unix
+
+without changing the code.
+
+### How It Works
+
+```text
+Java Program
+     ↓
+Compiled into Bytecode
+     ↓
+JVM on different OS converts bytecode into machine code
+```
+
+### Important Point
+
+* Java source code is platform independent
+* JVM implementation is platform specific
+
+Because every OS has its own JVM, the same Java bytecode works everywhere.
